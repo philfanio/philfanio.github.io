@@ -1,0 +1,240 @@
+/*
+.friendship {
+	position:relative;
+	width:100%;
+	height:40px;
+	line-height:40px;
+	font-size: 12px;
+}
+.friendship span {
+	float: left;
+	line-height: 40px;
+	height: 40px;
+	text-align: center;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#friendship_tabs{
+	height:40px;
+	overflow:hidden;
+	padding-left: 20px;
+}
+#friendship_tabs li{float:left;text-align:center;}
+#friendship_tabs li.border{width:120px;border-right:none;}
+
+#friendship_tabs li a{
+	display:block;
+	width:120px;
+	height:40px;
+	color:#514946;
+	background-position:right top;
+	text-decoration:none;
+	line-height: 40px;
+	background-image: url(../images/friends.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+#friendship_tabs li a:hover{
+	color:#990000;
+	text-decoration:none;
+	background-position:right bottom;
+	height: 40px;
+}
+#friendship_content{
+	position:absolute;
+	width:100%;
+	height:0;
+	top:-200px;
+	overflow:hidden;
+}
+
+.friend{
+	position:absolute;
+	top:200px;
+	width:100%;
+	height:55px;
+	padding-top:15px;
+	background-color: #6c3e23;
+}
+.friend li{
+	float:left;
+	width:120px;
+	height:27px;
+	text-align:center;
+	display:inline;
+	margin-top: 2px;
+	margin-right: 0;
+	margin-bottom: 2px;
+	margin-left: 0;
+}
+.friend li a{
+	display:block;
+	width:120px;
+	height:40px;
+	background-image: url(../images/friends.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.friend li a:hover{}
+#bclosebtn{
+	position:absolute;
+	cursor:pointer;
+	background-image: url(../images/friends.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}*/
+
+
+
+
+
+
+
+
+
+
+/*底部菜单*/
+.menu {
+	list-style:none;
+	width:100%;
+	height:40px;
+	position:absolute;
+	z-index:2;
+	background-color:#FFFFFF;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+.menu li {
+	float:left;
+	display:block;
+	text-align:center;
+	height: 40px;
+	line-height: 40px;
+	width: 120px;
+	font-size: 12px;
+	position: relative;
+	
+}
+
+.menu li a {
+	display:block;
+	outline:0;
+	text-decoration: none;
+	z-index: 100;
+	text-align: center;
+}
+
+.menu li:hover {
+	text-decoration: none;
+	text-align: center;
+	color: #6c3e23;
+}
+
+
+.menu li .drop {
+	background-image: url(../images/friends.png);
+	background-repeat: no-repeat;
+	background-position: right 0px;
+	height: 40px;
+	width: 120px;
+}
+.menu li:hover .drop {
+	background-image: url(../images/friends.png);
+	background-repeat: no-repeat;
+	background-position: right -40px;
+	height: 40px;
+	width: 120px;
+	color: #6c3e23;
+}
+
+.dropdown_1columns {
+	position:absolute;
+	text-align:left;
+	background-color: #fff;
+	z-index:1;
+	line-height: 40px;
+	width: 100%;
+	font-size: 12px;
+	font-weight: normal;
+	height: 40px;
+	display: none;
+}
+.dropdown_1columns ul {}
+.dropdown_1columns ul li {
+	line-height: 40px;
+	float: left;
+	height: 40px;
+	width: 100px;
+	text-align: center;
+}
+
+.db-tx {
+	background-image: url(../images/tx.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	line-height: 24px;
+	height: 24px;
+	width: 24px;
+}
+.db-xtsz {
+	background-image: url(../images/xtsz.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	line-height: 24px;
+	height: 24px;
+	width: 24px;
+}
+.footer-r {
+	line-height: 40px;
+	height: 40px;
+	padding-right: 20px;
+	right: 0px;
+	bottom: 0px;
+	position: absolute;
+	z-index: 99999;
+}
+.footer-r .ghz {
+	background-image: url(../images/tx.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-right: 10px;
+	padding-left: 30px;
+	line-height: 40px;
+	height: 40px;
+	float: left;
+}
+.footer-r .xz {
+	background-image: url(../images/tx.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-right: 10px;
+	padding-left: 30px;
+	line-height: 40px;
+	height: 40px;
+	float: left;
+}
+.footer-r .bz {
+	background-image: url(../images/tx.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-right: 10px;
+	padding-left: 30px;
+	line-height: 40px;
+	height: 40px;
+	float: left;
+}
+.footer-r .gy {
+	background-image: url(../images/tx.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-right: 10px;
+	padding-left: 30px;
+	line-height: 40px;
+	height: 40px;
+	float: left;
+}

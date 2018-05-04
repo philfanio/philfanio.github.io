@@ -1,0 +1,167 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+<!--全局样式-->
+<link href="common/css/ces.coral.css" rel="stylesheet" type="text/css" />
+<link href="default/css/layout.css" rel="stylesheet" type="text/css" />
+<script src="common/js/ces.coral.js" type="text/javascript"></script>
+<!--<script src="default/js/jquery-1.9.1.js" type="text/javascript"></script>-->
+
+<!--下拉框-->
+<link href="default/css/xlk.css" rel="stylesheet" type="text/css">
+<script src="default/js/xlk.js" type="text/javascript"></script>
+
+<!--滚动条-->
+<link href="default/css/perfect-scrollbar.css" rel="stylesheet" type="text/css">	
+<script src="default/js/perfect-scrollbar.with-mousewheel.min.js" type="text/javascript"></script>
+<script src="default/js/autoFit.js" type="text/javascript"></script>
+
+
+<!--表格隔行换色-->
+<link href="default/css/ghhs.css" rel="stylesheet" type="text/css">	
+<script src="default/js/ghhs.js" type="text/javascript"></script>
+
+<!--添加附件按钮rhl-->
+<link href="default/css/rhl_tz.css" rel="stylesheet" type="text/css">	
+
+<link rel="stylesheet" type="text/css" href="default/css/xlk.css">
+<!--框架-->
+<script type="text/javascript">
+	$(function(){
+		var initPage = function(){
+			var timeout, resizePage = function(){
+				var containerH = $(window).height();
+				
+				if (document.getElementById("contentright")) {
+					$("#contentleft").width($(window).width()-$("#contentright").width()).height(containerH);
+				} else {
+					$("#contentleft").width($(window).width()).height(containerH);
+				}
+				
+				$("#contentright").height(containerH);
+			}
+			resizePage();
+			$(window).resize(function(){
+				resizePage();
+			});
+		}
+		initPage();
+		
+	})
+</script>
+
+</head>
+
+<body class="contentBox-body">
+
+		<div id="contentleft" class="contentleft-body">
+		
+			<div class="dx">
+				<span class="lj">数据导出 > 导出日志</span>
+			</div>
+
+
+			
+			<div class="submenu-cx">
+			
+		<div class="submenu">
+			<div class="btn">
+				<ul>
+					<li><a href="#" class="btn-qx" onclick="selectAll();" >全选</a></li>
+				<!--  	<li><a href="#" class="btn-xj" onclick="f_exp();">导出</a></li> -->
+					<li><a href="#" class="btn-sc" onclick="del();">删除</a></li>
+				</ul>
+			</div>
+			<form id="queryForm" method="post" action="">
+				<div class="xlk">
+					<div class="key">
+						<span class="mkey">选择类型</span>
+						<ul style="display: none;" class="keyul">
+							<li onclick="sousuo('created_user_name');">导出人</li>
+						</ul>
+					</div>
+					<input class="seatext" value="请输入关键字" type="text">
+					<input class="seabtn" value="搜索" type="submit" onclick="f_searchSource();" style="float: inherit;">
+				</div>
+			</form>
+		</div>
+		<div class='gdt' perfectbar='1' subWidth="" subHeight=".submenu">
+			<div class="padding10">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" id="table" name="table">
+  <thead>
+    <tr>
+      <th>文件名称</th>
+      <th>导出文件存放路径</th>
+      <th>导出人</th>
+      <th>导出日期</th>
+      <th>状态</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+    <tr>
+      <td align="center">2014-06-05-16-15-30.zip</td>
+      <td align="center">uploadExp/excel/2014-06-05-16-15-30.zip</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-06-05</td>
+      <td align="center">导出成功</td>
+      <td align="center"><a href="#">下载</a><a href="#" style=" margin-left:10px;">查看日志</a></td>
+    </tr>
+    <tr>
+      <td align="center">2014-06-05-16-15-30.zip</td>
+      <td align="center">uploadExp/excel/2014-06-05-16-15-30.zip</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-06-05</td>
+      <td align="center">导出成功</td>
+      <td align="center"><a href="#">下载</a><a href="#" style=" margin-left:10px;">查看日志</a></td>
+    </tr>
+    <tr>
+      <td align="center">2014-06-05-16-15-30.zip</td>
+      <td align="center">uploadExp/excel/2014-06-05-16-15-30.zip</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-06-05</td>
+      <td align="center">导出成功</td>
+      <td align="center"><a href="#">下载</a><a href="#" style=" margin-left:10px;">查看日志</a></td>
+    </tr>
+    <tr>
+      <td align="center">2014-06-05-16-15-30.zip</td>
+      <td align="center">uploadExp/excel/2014-06-05-16-15-30.zip</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-06-05</td>
+      <td align="center">导出成功</td>
+      <td align="center"><a href="#">下载</a><a href="#" style=" margin-left:10px;">查看日志</a></td>
+    </tr>
+    <tr>
+      <td align="center">2014-06-05-16-15-30.zip</td>
+      <td align="center">uploadExp/excel/2014-06-05-16-15-30.zip</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-06-05</td>
+      <td align="center">导出成功</td>
+      <td align="center"><a href="#">下载</a><a href="#" style=" margin-left:10px;">查看日志</a></td>
+    </tr>
+    <tr>
+      <td align="center">2014-06-05-16-15-30.zip</td>
+      <td align="center">uploadExp/excel/2014-06-05-16-15-30.zip</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-06-05</td>
+      <td align="center">导出成功</td>
+      <td align="center"><a href="#">下载</a><a href="#" style=" margin-left:10px;">查看日志</a></td>
+    </tr>
+    
+</table>
+
+				<div id="pagersr"></div>
+			</div>
+		</div>
+
+</div>
+</div>
+		
+		
+		
+		
+
+</body>
+</html>

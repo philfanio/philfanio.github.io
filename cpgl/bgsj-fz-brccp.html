@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!--全局样式-->
+<link href="common/css/ces.coral.css" rel="stylesheet" type="text/css" />
+<link href="default/css/layout.css" rel="stylesheet" type="text/css" />
+<script src="common/js/ces.coral.js" type="text/javascript"></script>
+<!--<script src="default/js/jquery-1.9.1.js" type="text/javascript"></script>-->
+
+<!--下拉框-->
+<link href="default/css/xlk.css" rel="stylesheet" type="text/css">
+<script src="default/js/xlk.js" type="text/javascript"></script>
+
+<!--底部菜单-->
+<link href="default/css/db.css" rel="stylesheet" type="text/css" />
+
+<!--导航菜单-->
+<link href="default/css/dh.css" rel="stylesheet" type="text/css" />
+<script src="default/js/SuperSlide.2.1.js" type="text/javascript"></script>
+<script src="default/js/cd.js" type="text/javascript"></script>
+
+<!--表格隔行换色-->
+<link href="default/css/ghhs.css" rel="stylesheet" type="text/css">
+<script src="default/js/ghhs.js" type="text/javascript"></script>
+
+<!--框架-->
+<script type="text/javascript">
+	$(function(){
+		var initPage = function(){
+			var timeout, resizePage = function(){
+				var containerH = $(window).height()-$("#header").height()-$("#footer").height();
+				$("#contentBox").width($(window).width()-$("#left").width()).height(containerH);
+				$("#left").height(containerH);
+				$("#container").height(containerH);
+			}
+			resizePage();
+			$(window).resize(function(){
+				resizePage();
+			});
+		}
+		initPage();
+	})
+</script>
+
+
+</head>
+<body>
+	<div id="header">
+
+		<div class="header">
+	<div class="logo"><img src="default/images/logo.png"></div>
+
+	<div class="navBar">
+		<ul class="nav clearfix">
+			<li class="m">
+			<h3><a href="tz.html">我的台账</a></h3>
+			</li>
+
+			<li class="m">
+			<h3><a href="#">+ 征集管理</a></h3>
+			<ul class="sub">
+				<li><a href="zjxxdj.html">征集信息登记</a></li>
+				<li><a href="zjxsdj.html">征集线索登记</a></li>
+				<li><a href="zjlygl.html">征集来源管理</a></li>
+			</ul>
+			</li>
+
+			<li class="m">
+			<h3><a href="#">+ 藏品编目</a></h3>
+			<ul class="sub">
+				<li><a href="cpdj.html">藏品登记</a></li>
+				<li><a href="yxbm.html">影像编目</a></li>
+				<li><a href="zzsh.html">总账审核</a></li>
+				<li><a href="zzll.html">总账浏览</a></li>
+                <li><a href="cpjd.html">藏品鉴定</a></li>
+				<!--<li><a href="brccp.html">不入藏藏品登记</a></li>
+				<li><a href="brccpyx.html">不入藏藏品影像</a></li>
+				<li><a href="brccpsh.html">不入藏藏品审核</a></li>
+				<li><a href="brccpll.html">不入藏藏品浏览</a></li>-->
+				<li><a href="hsz.html">回收站</a></li>
+			</ul>
+			</li>
+
+			<li class="m">
+			<h3><a href="#">+ 藏品管理</a></h3>
+			<ul class="sub" style="display: none;">
+				<li><a href="bgsj-sg.html">保管事件</a></li>
+				<li><a href="cpzt.html">藏品专题</a></li>
+			</ul>
+			</li>			<li class="m">
+			<h3><a href="#">+ 查询统计</a></h3>
+			<ul class="sub" style="display: none;">
+				<li><a href="jbjs.html">藏品检索</a></li>
+				<li><a href="cptj.html">藏品统计</a></li>
+			</ul>
+			</li>			<li class="m">
+			<h3><a href="#">+ 库房管理</a></h3>
+			<ul class="sub" style="display: none;">
+				<li><a href="cprk.html">藏品入库</a></li>
+				<li><a href="cpyk.html">藏品移库</a></li>
+				<li><a href="cpck.html">藏品出库</a></li>
+				<li><a href="cpgh.html">藏品归还</a></li>
+                <li><a href="kfcx.html">库房查询</a></li>
+                <li><a href="riwh.html">日常维护</a></li>
+			</ul>
+			</li>			<li class="m">
+			<h3><a href="#">+ 数据维护</a></h3>
+			<ul class="sub" style="display: none;">
+                <li><a href="tzgg.html">通知公告管理</a></li>
+                <li><a href="tycgl.html">同义词管理</a></li>
+                <li><a href="ghzgl.html">古汉字管理</a></li>
+                <li><a href="bmdr.html">编目导入</a></li>
+<li><a href="yxdr.html">影像导入</a></li>
+                <li><a href="sjdc-gjss.html">数据导出</a></li>
+                <li><a href="sjbf.html">数据备份</a></li>
+			</ul>
+			</li>
+
+			<li class="block"></li>
+		</ul>
+		</div>
+	</div>
+
+	</div>
+
+	<div id="container">
+
+		<iframe id="left" class="left-css" src="bgsj-fz-brccp-left.html" scrolling="no" frameborder="0"></iframe>
+
+		<iframe id="contentBox" src="bgsj-fz-brccp-list.html" scrolling="no" frameborder="0"></iframe>
+
+	</div>
+
+
+
+	<div id="footer">
+
+<div id="tz1_popup_menu" class="dropdown_1columns">
+	<ul>
+		<li>修改密码</li>
+		<li><a href="tz.html">藏品登记</a></li>
+<li><a href="tz_cf.html">库房管理</a></li>
+<li><a href="tz_cp.html">藏品管理</a></li>
+<li><a href="tz_zz.html">总账管理</a></li>
+<li><a href="tz_zj.html">征集管理</a></li>
+<li><a href="tz_system.html">系统管理</a></li>
+	</ul>
+</div>
+
+<div id="tz2_popup_menu" class="dropdown_1columns">
+	<ul>
+		<li>分类维护</li>
+		<li>指标维护</li>
+		<li>指标定制</li>
+		<li>应用自定义</li>
+		<!--<li>数据权限</li>-->
+        <li><a href="pjgl.html" class="drop">排架管理</a></li>
+	</ul>
+</div>
+
+
+<ul class="menu">
+	<li id="tz1" class="db-tx"><a href="#" class="drop">管理员</a></li>
+	<li><a href="#">注销</a></li>
+	<li id="tz2" class="db-xtsz"><a href="#" class="drop">系统设置</a></li>
+</ul>
+
+<div class="footer-r">版权所有：上海金鑫计算机系统工程股份有限公司</div>
+<script src="default/js/db.js" type="text/javascript"></script>
+
+</div>
+
+
+<!--弹出窗口 开始-->
+<div id="baidu">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e6e6e6">
+  <tr>
+    <td width="200" valign="top"><img src="default/images/ls/11.jpg"></td>
+    <td>
+
+      <table width="100%" height="40" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+        <tr>
+          <td>
+
+
+
+			<div class="submenu">
+
+			<div class="btn">
+				<ul>
+					<li><a href="#" class="btn-qx">全选</a></li>
+					<li><a href="#" class="btn-jr">加入</a></li>
+				</ul>
+			</div>
+
+				<div class="xlk">
+					<div class="key">
+						<span class="mkey">选择类型</span>
+						<ul style="display: none;" class="keyul">
+							<li>藏品名称</li>
+							<li>总登记号</li>
+							<li>分登记号</li>
+							<li>完残情况</li>
+						</ul>
+					</div>
+					<input class="seatext" value="请输入关键字" type="text">
+					<input class="seabtn" value="搜索" type="submit">
+				</div>
+
+			</div>
+
+
+
+
+
+		  </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" id="table" name="table">
+  <thead>
+    <tr>
+      <th width="50">&nbsp;</th>
+      <th width="50">缩略图</th>
+      <th>藏品名称</th>
+      <th width="100">总登记号</th>
+      <th width="100">分登记号</th>
+      <th width="100">完残情况</th>
+      <th width="100">操作</th>
+    </tr>
+  </thead>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp1.jpg" width="25" height="30"></td>
+      <td align="center">马家窑文化彩陶蛙纹壶 </td>
+      <td align="center">A15346466</td>
+      <td align="center">A001</td>
+      <td align="center">完整</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox2" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp2.jpg" width="25" height="30"></td>
+      <td align="center">黑陶高柄杯</td>
+      <td align="center">A12312412</td>
+      <td align="center">A001</td>
+      <td align="center">完整</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox3" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp3.jpg" width="25" height="30"></td>
+      <td align="center">马家窑文化彩陶弦纹瓶</td>
+      <td align="center">A12378999</td>
+      <td align="center">A001</td>
+      <td align="center">残缺</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox4" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp4.jpg" width="25" height="30"></td>
+      <td align="center">马家窑文化彩陶蛙纹壶 </td>
+      <td align="center">A97834533</td>
+      <td align="center">A001</td>
+      <td align="center">严重残缺</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox5" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp5.jpg" width="25" height="30"></td>
+      <td align="center">磁山文化灰陶深腹双耳罐</td>
+      <td align="center">A04233667</td>
+      <td align="center">A001</td>
+      <td align="center">严重残缺</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox6" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp6.jpg" width="25" height="30"></td>
+      <td align="center">马家窑文化彩陶水波纹钵</td>
+      <td align="center">A72462346</td>
+      <td align="center">A001</td>
+      <td align="center">严重残缺</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox7" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp7.jpg" width="25" height="30"></td>
+      <td align="center">马家窑文化彩陶弦纹瓶</td>
+      <td align="center">A34683522</td>
+      <td align="center">A001</td>
+      <td align="center">残缺</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox8" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp8.jpg" width="25" height="30"></td>
+      <td align="center">马家窑文化彩陶蛙纹壶</td>
+      <td align="center">A62342351</td>
+      <td align="center">A001</td>
+      <td align="center">严重残缺</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox9" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp9.jpg" width="25" height="30"></td>
+      <td align="center">磁山文化灰陶深腹双耳罐</td>
+      <td align="center">A12311255</td>
+      <td align="center">A001</td>
+      <td align="center">严重残缺</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox10" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp10.jpg" width="25" height="30"></td>
+      <td align="center">黑陶高柄杯</td>
+      <td align="center">A71124122</td>
+      <td align="center">A001</td>
+      <td align="center">残缺</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox11" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp11.jpg" width="25" height="30"></td>
+      <td align="center">磁山文化灰陶深腹双耳罐</td>
+      <td align="center">A77888343</td>
+      <td align="center">A001</td>
+      <td align="center">完整</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox12" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp12.jpg" width="25" height="30"></td>
+      <td align="center">黑陶高柄杯</td>
+      <td align="center">A12315634</td>
+      <td align="center">A001</td>
+      <td align="center">完整</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox13" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp1.jpg" width="25" height="30"></td>
+      <td align="center">黑陶高柄杯</td>
+      <td align="center">A78990345</td>
+      <td align="center">A001</td>
+      <td align="center">残缺</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox14" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp2.jpg" width="25" height="30"></td>
+      <td align="center">黑陶高柄杯</td>
+      <td align="center">A00566231</td>
+      <td align="center">A001</td>
+      <td align="center">完整</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox15" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp3.jpg" width="25" height="30"></td>
+      <td align="center">磁山文化灰陶深腹双耳罐</td>
+      <td align="center">A12312232</td>
+      <td align="center">A001</td>
+      <td align="center">完整</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox16" value="checkbox" /></td>
+      <td align="center"><img class="img" src="default/images/ls/cp4.jpg" width="25" height="30"></td>
+      <td align="center">黑陶高柄杯</td>
+      <td align="center">A79976342</td>
+      <td align="center">A001</td>
+      <td align="center">完整</td>
+      <td align="center"><div class="btn"><ul><li><a href="#" class="btn-ck">查看</a></li></ul></div></td>
+    </tr>
+</table>
+
+
+	</td>
+  </tr>
+</table>
+</div>
+
+<script type="text/javascript">
+$("#baidu").dialog({
+	title : "加入藏品",
+	width :  ($(window).width()-100),
+	height : ($(window).height()-100),
+	modal: true,
+	autoOpen:false
+})
+
+function dialog(id){
+	$(id).dialog("open");
+}
+</script>
+<!--弹出窗口结束-->
+
+
+</body>
+</html>

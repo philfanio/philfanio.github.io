@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+<!--全局样式-->
+<link href="common/css/ces.coral.css" rel="stylesheet" type="text/css" />
+<link href="default/css/layout.css" rel="stylesheet" type="text/css" />
+<script src="common/js/ces.coral.js" type="text/javascript"></script>
+<!--<script src="default/js/jquery-1.9.1.js" type="text/javascript"></script>-->
+
+<!--下拉框-->
+<link href="default/css/xlk.css" rel="stylesheet" type="text/css">	
+<script src="default/js/xlk.js" type="text/javascript"></script>
+
+<!--滚动条-->
+<link href="default/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+<script src="default/js/perfect-scrollbar.with-mousewheel.min.js" type="text/javascript"></script>
+<script src="default/js/autoFit.js" type="text/javascript"></script>
+
+<!--框架-->
+<script type="text/javascript">
+	$(function(){
+		var initPage = function(){
+			var timeout, resizePage = function(){
+				var containerH = $(window).height();
+				
+				if (document.getElementById("contentright")) {
+					$("#contentleft").width($(window).width()-$("#contentright").width()).height(containerH);
+				} else {
+					$("#contentleft").width($(window).width()).height(containerH);
+				}
+				
+				$("#contentright").height(containerH);
+			}
+			resizePage();
+			$(window).resize(function(){
+				resizePage();
+			});
+		}
+		initPage();
+		
+	})
+</script>
+
+</head>
+
+<body class="contentBox-body">
+
+		<div id="contentleft" class="contentleft-body">
+		
+			<div class="dx">
+				<span class="lj">总账审核</span>	
+				<span class="qh"><a href="#"><img src="default/images/lb-h.gif" border="0"></a></span>
+				<span class="qh"><a href="#"><img src="default/images/slt.gif"></a></span>
+			</div>
+			
+			<div class="submenu">
+			
+				<div class="btn">
+					<ul>
+						<li><a href="#" class="btn-qx">全选</a></li>
+						<li><a href="#" class="btn-tg">通过</a></li>
+						<li><a id="tc-th" href="#" class="btn-th">退回</a></li>
+					</ul>
+				</div>
+				
+				<div class="xlk">
+					<div class="key">
+						<span class="mkey">选择类型</span>
+						<ul style="display: none;" class="keyul">
+							<li>名称</li>
+							<li>总登记号</li>
+							<li>分登记号</li>
+							<li>级别</li>
+							<li>年代</li>
+						</ul>
+					</div>
+					<input class="seatext" value="请输入关键字" type="text">
+					<input class="seabtn" value="搜索" type="submit">
+				</div>
+				
+			
+			</div>
+			
+
+
+<div class='gdt' perfectbar='1' subWidth="#contentright" subHeight=".submenu,.dx">
+<div class="padding10">
+			
+<img src="default/images/ls/10.png" border="0" usemap="#Map">
+<map name="Map">
+  <area shape="rect" coords="838,493,873,526" href="zzsh-bj.html">
+  <area shape="rect" coords="664,492,699,525" href="zzsh-bj.html">
+  <area shape="rect" coords="488,492,523,525" href="zzsh-bj.html">
+  <area shape="rect" coords="316,492,351,525" href="zzsh-bj.html">
+  <area shape="rect" coords="135,493,170,526" href="zzsh-bj.html">
+  <area shape="rect" coords="838,226,873,259" href="zzsh-bj.html">
+  <area shape="rect" coords="666,225,701,258" href="zzsh-bj.html">
+  <area shape="rect" coords="487,226,522,259" href="zzsh-bj.html">
+  <area shape="rect" coords="315,226,350,259" href="zzsh-bj.html">
+  <area shape="rect" coords="135,226,170,259" href="zzsh-bj.html">
+</map>
+			
+</div>
+</div>
+
+
+		</div>
+		
+		
+		
+		<iframe id="contentright" class="contentright-css" src="contentright.html" scrolling="no" frameborder="0"></iframe>
+		
+
+
+
+<script type="text/javascript">
+	$("#tc-th").click(function(){
+		top.dialog("#tcth");
+	});
+</script>
+</body>
+</html>

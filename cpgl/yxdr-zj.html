@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>影像导入</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+<!--全局样式-->
+<link href="common/css/ces.coral.css" rel="stylesheet" type="text/css" />
+<link href="default/css/layout.css" rel="stylesheet" type="text/css" />
+<script src="common/js/ces.coral.js" type="text/javascript"></script>
+<!--<script src="default/js/jquery-1.9.1.js" type="text/javascript"></script>-->
+
+<!--下拉框-->
+<link href="default/css/xlk.css" rel="stylesheet" type="text/css">
+<script src="default/js/xlk.js" type="text/javascript"></script>
+
+<!--滚动条-->
+<link href="default/css/perfect-scrollbar.css" rel="stylesheet" type="text/css">	
+<script src="default/js/perfect-scrollbar.with-mousewheel.min.js" type="text/javascript"></script>
+<script src="default/js/autoFit.js" type="text/javascript"></script>
+
+
+<!--表格隔行换色-->
+<link href="default/css/ghhs.css" rel="stylesheet" type="text/css">	
+<script src="default/js/ghhs.js" type="text/javascript"></script>
+
+<!--添加附件按钮rhl-->
+<link href="default/css/rhl_tz.css" rel="stylesheet" type="text/css">	
+</head>
+
+<body class="contentleft-body">
+
+
+			<div class="dx">
+				<span class="lj"><a href="#">数据维护</a> &gt;<a href="#">影像导入</a></span>
+			</div>
+			
+			<div class="submenu">
+			<div class="btn">
+				<ul>
+					<li><a href="#" class="btn-qx" onclick="f_selectAll();" >全选</a></li>
+					<li><a href="yxdr-xj.html" class="btn-xj" onclick="f_receive();">新建任务</a></li>
+					<li><a href="yxdr-bj.html" class="btn-bj" onclick="f_edit();">编辑任务</a></li>
+					<li><a href="#" class="btn-sc" onclick="del();">删除</a></li>
+				</ul>
+			</div>
+			<form id="queryForm" method="post" action="">
+				<div class="xlk">
+					<div class="key">
+						<span class="mkey">选择类型</span>
+						<ul style="display: none;" class="keyul">
+							<li onclick="sousuo('batch_no');">批次号</li>
+							<li onclick="sousuo('upload_type');">影像类型</li>
+							<li onclick="sousuo('created_user_name');">导入人</li>
+							<li onclick="sousuo('upload_status');">状态</li>
+						</ul>
+					</div>
+					<input class="seatext" value="请输入关键字" type="text">
+					<input class="seabtn" value="搜索" type="submit" onclick="f_searchSource();" style="float: inherit;">
+				</div>
+			</form>
+		</div>
+		<div class='gdt' perfectbar='1' subWidth="" subHeight=".submenu,.dx">
+			<div class="padding10">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0" id="table" name="table">
+  <thead>
+    <tr>
+      <th width="50">&nbsp;</th>
+      <th>批次号</th>
+      <th>影像编目文件</th>
+      <th>影像类型</th>
+      <th>导入日期</th>
+      <th>导入人</th>
+      <th>状态</th>
+      <th width="200">操作</th>
+    </tr>
+  </thead>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">AAAAA</td>
+      <td align="center">DM001.xls</td>
+      <td align="center">照片</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">张三</td>
+      <td align="center">未提交</td>
+      <td align="center"><a href="yxdr-mx.html" >明细</a><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">AAAAA</td>
+      <td align="center">DM001.xls</td>
+      <td align="center">照片</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">张三</td>
+      <td align="center">未提交</td>
+      <td align="center"><a href="yxdr-mx.html" >明细</a><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">AAAAA</td>
+      <td align="center">DM001.xls</td>
+      <td align="center">照片</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">张三</td>
+      <td align="center">未提交</td>
+      <td align="center"><a href="yxdr-mx.html" >明细</a><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">AAAAA</td>
+      <td align="center">DM001.xls</td>
+      <td align="center">照片</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">张三</td>
+      <td align="center">未提交</td>
+      <td align="center"><a href="yxdr-mx.html" >明细</a><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">AAAAA</td>
+      <td align="center">DM001.xls</td>
+      <td align="center">照片</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">张三</td>
+      <td align="center">未提交</td>
+      <td align="center"><a href="yxdr-mx.html" >明细</a><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">AAAAA</td>
+      <td align="center">DM001.xls</td>
+      <td align="center">照片</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">张三</td>
+      <td align="center">未提交</td>
+      <td align="center"><a href="yxdr-mx.html" >明细</a><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">AAAAA</td>
+      <td align="center">DM001.xls</td>
+      <td align="center">照片</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">张三</td>
+      <td align="center">未提交</td>
+      <td align="center"><a href="yxdr-mx.html" >明细</a><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">AAAAA</td>
+      <td align="center">DM001.xls</td>
+      <td align="center">照片</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">张三</td>
+      <td align="center">未提交</td>
+      <td align="center"><a href="yxdr-mx.html" >明细</a><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">AAAAA</td>
+      <td align="center">DM001.xls</td>
+      <td align="center">照片</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">张三</td>
+      <td align="center">未提交</td>
+      <td align="center"><a href="yxdr-mx.html" >明细</a><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+</table>
+				<div id="pagersr"></div>
+			</div>
+		</div>
+
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!--全局样式-->
+<link href="common/css/ces.coral.css" rel="stylesheet" type="text/css" />
+<link href="default/css/layout.css" rel="stylesheet" type="text/css" />
+<script src="common/js/ces.coral.js" type="text/javascript"></script>
+<!--<script src="default/js/jquery-1.9.1.js" type="text/javascript"></script>-->
+
+<!--底部菜单-->
+<link href="default/css/db.css" rel="stylesheet" type="text/css" />
+
+<!--导航菜单-->
+<link href="default/css/dh.css" rel="stylesheet" type="text/css" />
+<script src="default/js/SuperSlide.2.1.js" type="text/javascript"></script>
+<script src="default/js/cd.js" type="text/javascript"></script>
+
+
+<!--框架-->
+<script type="text/javascript">
+	$(function(){
+		var initPage = function(){
+			var timeout, resizePage = function(){
+
+				var containerH = $(window).height()-$("#header").height()-$("#footer").height();
+				$("#contentBox").width($(window).width()-$("#left").width()).height(containerH);
+				$("#container").height(containerH);
+			}
+			resizePage();
+			$(window).resize(function(){
+				resizePage();
+
+			});
+		}
+		initPage();
+
+	})
+</script>
+
+</head>
+<body>
+	<div id="header">
+
+		<div class="header">
+	<div class="logo"><img src="default/images/logo.png"></div>
+
+	<div class="navBar">
+		<ul class="nav clearfix">
+			<li class="m">
+			<h3><a href="tz.html">我的台账</a></h3>
+			</li>
+
+			<li class="m">
+			<h3><a href="#">+ 征集管理</a></h3>
+			<ul class="sub">
+				<li><a href="zjxxdj.html">征集信息登记</a></li>
+				<li><a href="zjxsdj.html">征集线索登记</a></li>
+				<li><a href="zjlygl.html">征集来源管理</a></li>
+			</ul>
+			</li>
+
+			<li class="m">
+			<h3><a href="#">+ 藏品编目</a></h3>
+			<ul class="sub">
+				<li><a href="cpdj.html">藏品登记</a></li>
+				<li><a href="yxbm.html">影像编目</a></li>
+				<li><a href="zzsh.html">总账审核</a></li>
+				<li><a href="zzll.html">总账浏览</a></li>
+                <li><a href="cpjd.html">藏品鉴定</a></li>
+				<!--<li><a href="brccp.html">不入藏藏品登记</a></li>
+				<li><a href="brccpyx.html">不入藏藏品影像</a></li>
+				<li><a href="brccpsh.html">不入藏藏品审核</a></li>
+				<li><a href="brccpll.html">不入藏藏品浏览</a></li>-->
+				<li><a href="hsz.html">回收站</a></li>
+			</ul>
+			</li>
+
+			<li class="m">
+			<h3><a href="#">+ 藏品管理</a></h3>
+			<ul class="sub" style="display: none;">
+				<li><a href="bgsj-sg.html">保管事件</a></li>
+				<li><a href="cpzt.html">藏品专题</a></li>
+			</ul>
+			</li>			<li class="m">
+			<h3><a href="#">+ 查询统计</a></h3>
+			<ul class="sub" style="display: none;">
+				<li><a href="jbjs.html">藏品检索</a></li>
+				<li><a href="cptj.html">藏品统计</a></li>
+			</ul>
+			</li>			<li class="m">
+			<h3><a href="#">+ 库房管理</a></h3>
+			<ul class="sub" style="display: none;">
+				<li><a href="cprk.html">藏品入库</a></li>
+				<li><a href="cpyk.html">藏品移库</a></li>
+				<li><a href="cpck.html">藏品出库</a></li>
+				<li><a href="cpgh.html">藏品归还</a></li>
+                <li><a href="kfcx.html">库房查询</a></li>
+                <li><a href="riwh.html">日常维护</a></li>
+			</ul>
+			</li>			<li class="m">
+			<h3><a href="#">+ 数据维护</a></h3>
+			<ul class="sub" style="display: none;">
+                <li><a href="tzgg.html">通知公告管理</a></li>
+                <li><a href="tycgl.html">同义词管理</a></li>
+                <li><a href="ghzgl.html">古汉字管理</a></li>
+                <li><a href="bmdr.html">编目导入</a></li>
+<li><a href="yxdr.html">影像导入</a></li>
+                <li><a href="sjdc-gjss.html">数据导出</a></li>
+                <li><a href="sjbf.html">数据备份</a></li>
+			</ul>
+			</li>
+
+			<li class="block"></li>
+		</ul>
+		</div>
+	</div>
+
+	</div>
+
+	<div id="container">
+
+		<iframe id="left" class="tz-left-css" src="tz-left-cf.html" scrolling="no" frameborder="0"></iframe>
+
+		<iframe id="contentBox" src="tz-contentBox-cf.html" scrolling="no" frameborder="0"></iframe>
+
+	</div>
+
+
+
+	<div id="footer">
+
+<div id="tz1_popup_menu" class="dropdown_1columns">
+	<ul>
+		<li>修改密码</li>
+		<li><a href="tz.html">藏品登记</a></li>
+        <li><a href="tz_cf.html">库房管理</a></li>
+        <li><a href="tz_cp.html">藏品管理</a></li>
+        <li><a href="tz_zz.html">总账管理</a></li>
+        <li><a href="tz_zj.html">征集管理</a></li>
+        <li><a href="tz_system.html">系统管理</a></li>
+<!--		<li>皮肤：青铜时代</li>-->
+	</ul>
+</div>
+
+<div id="tz2_popup_menu" class="dropdown_1columns">
+	<ul>
+		<li>分类维护</li>
+		<li>指标维护</li>
+		<li>指标定制</li>
+		<li>应用自定义</li>
+		<!--<li>数据权限</li>-->
+        <li><a href="pjgl.html" class="drop">排架管理</a></li>
+	</ul>
+</div>
+
+
+<ul class="menu">
+	<li id="tz1" class="db-tx"><a href="#" class="drop">管理员</a></li>
+	<li><a href="#">注销</a></li>
+	<li id="tz2" class="db-xtsz"><a href="#" class="drop">系统设置</a></li>
+</ul>
+
+<div class="footer-r">
+	<span class="ghz"><a id="tc-ghz" href="#">古汉字</a></span>
+	<span class="xz"><a id="tc-xz" href="#">下载</a></span>
+	<span class="bz"><a id="tc-bz" href="#">帮助</a></span>
+	<span class="gy"><a id="tc-gy" href="#">关于藏品...</a></span>
+</div>
+<script src="default/js/db.js" type="text/javascript"></script>
+
+	</div>
+
+
+
+
+
+
+<div id="ghz">
+古汉字
+</div>
+
+<div id="xz">
+下载
+</div>
+
+<div id="bz">
+帮助
+</div>
+
+<div id="gy">
+关于
+</div>
+
+
+<script type="text/javascript">
+$("#ghz").dialog({
+	title : "古汉字",
+	width : 565,
+	height : 400,
+	modal: true,
+	autoOpen:false
+})
+
+$("#xz").dialog({
+	title : "下载",
+	width : 565,
+	height : 400,
+	modal: true,
+	autoOpen:false
+})
+
+$("#bz").dialog({
+	title : "帮助",
+	width : 565,
+	height : 400,
+	modal: true,
+	autoOpen:false
+})
+
+$("#gy").dialog({
+	title : "关于",
+	width : 565,
+	height : 400,
+	modal: true,
+	autoOpen:false
+})
+
+function dialog(id){
+	$(id).dialog("open");
+}
+</script>
+
+
+
+<script type="text/javascript">
+	$("#tc-ghz").click(function(){
+		top.dialog("#ghz");
+	});
+
+	$("#tc-xz").click(function(){
+		top.dialog("#xz");
+	});
+
+	$("#tc-bz").click(function(){
+		top.dialog("#bz");
+	});
+
+	$("#tc-gy").click(function(){
+		top.dialog("#gy");
+	});
+</script>
+</body>
+</html>

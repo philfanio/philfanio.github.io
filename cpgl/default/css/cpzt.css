@@ -1,0 +1,51 @@
+.cpzt {
+	margin-top: 20px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	width: 100%;
+}
+.cpzt li {
+	float: left;
+	width: 28%;
+	height:400px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	border: 1px solid #CCCCCC;
+	box-shadow: 3px 3px 4px #595757;
+}
+
+.cpzt li .b1 {
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.cpzt li .b2 {
+	font-size: 22px;
+	color: #6c3e23;
+	text-align: center;
+	line-height: 30px;
+	font-family: "微软雅黑";
+	width: 100%;
+}
+.cpzt li .b3 {
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+	width: 100%;
+	color: #595757;
+}
+.cpzt li .b4 {
+	font-size: 12px;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 18px;
+	height: 86px;
+}
+.cpzt li .b5 {
+	width: 100%;
+	text-align: right;
+}

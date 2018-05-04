@@ -1,0 +1,48 @@
+.new-actives {
+	width: 300px;
+	height: 395px;
+	overflow: hidden;
+	position: relative;
+	zoom: 1;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.new-actives .tab-hd{ height:29px; background-color:#eee; margin-bottom:-1px; color:#404040; }
+.new-actives .more { float: right; position: relative; top: 5px; right: 7px; }
+.new-actives .step { right: 10px; float: right; margin-top: 7px; width: 32px;}
+.new-actives .step a { background-color: #fff }
+.new-actives .pageState{ float: left; padding: 4px 10px 0 210px; }
+.new-actives .pageState span{ font-weight:bold; color:#f60; }
+.new-actives .tab-bd {
+	height: 395px;
+	overflow: hidden;
+}
+.new-actives .tab-bd li {
+	border-bottom: 1px solid #f2f2f2;
+	height: 60px;
+	overflow: hidden;
+	float: left;
+	width: 100%;
+	position: relative;
+	font-size: 14px;
+	line-height: 60px;
+}
+.new-actives .tab-bd li img {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.new-actives .tab-bd em { height: 1px; overflow: hidden; width: 288px; background-color: #f2f2f2; display: block; left: 4px; top: 54px; position: absolute; }.new-actives .tab-bd ul { height: 567px; overflow: hidden }
+.new-actives .tab-bd li a { height: 60px; display: block; font-size: 14px;line-height: 60px;}
+.new-actives .arrow, .arrow s { position: absolute; display: inline-block; font-size: 0; line-height: 0; width: 0; height: 0; border: dashed 4px; }
+.new-actives .arrow-rthin, .arrow-rthin s { border-color: transparent transparent transparent #666; border-left-style: solid; }
+.new-actives .arrow-rthin s { border-left-color: #FAFAFA; left: -6px; top: -4px; }
+.new-actives .arrow-lthin, .arrow-lthin s { border-color: transparent #666 transparent transparent; border-right-style: solid; }
+.new-actives .arrow-lthin s { border-right-color: #fff; right: -6px; top: -4px; }
+.new-actives .step { position: absolute; padding-left: 1px; }
+.new-actives .step a { float: left; width: 14px; height: 12px; border: 1px solid #d8d8d8; margin-left: -1px; }
+.new-actives .step .arrow-rthin { right: 2px; top: 3px; }
+.new-actives .step .arrow-lthin { left: 2px; top: 3px; }
+.new-actives .step s { cursor: pointer; }
+.new-actives .step a:hover .arrow-rthin { border-left-color: #f60; }
+.new-actives .step a:hover .arrow-lthin { border-right-color: #f60; }
+.new-actives .step a.prevStop,.new-actives .step a.nextStop{ filter:alpha(opacity=60); opacity: 0.6; cursor: auto }

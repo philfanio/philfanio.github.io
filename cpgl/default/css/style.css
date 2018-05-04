@@ -1,0 +1,149 @@
+.bt {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	line-height: 50px;
+	color: #6c3e23;
+	height: 50px;
+	font-weight: bold;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #6c3e23;
+	padding-left: 30px;
+}
+
+
+
+.wrapper{
+	width:100%;
+/*	max-width:800px;
+	margin:30px auto;*/
+}
+.st-accordion{
+    width:100%;
+    min-width:270px;
+    margin: 0 auto;
+}
+.st-accordion ul li{
+	height: 60px;
+	overflow: hidden;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: dotted;
+	border-bottom-style: dotted;
+	border-top-color: #ffffff;
+	border-bottom-color: #bdbdbd;
+	padding-left: 30px;
+}
+
+
+.st-accordion ul li.c1{
+	background-color: #ffffff;
+}
+.st-accordion ul li.c2{
+	background-color: #f7f2ef;
+}
+
+.st-accordion ul li .img{
+	margin-right: 30px;
+}
+.st-accordion ul li .r2{
+	font-size: 12px;
+	position: absolute;
+	right: 50px;
+	top: 0px;
+}
+.st-accordion ul li .r1{
+	font-size: 12px;
+	position: absolute;
+	right: 200px;
+	top: 0px;
+}
+
+.st-accordion ul li:first-child{
+    border-top:none;
+}
+.st-accordion ul li > a{
+	text-shadow: 1px 1px 1px #fff;
+	font-size: 14px;
+	display: block;
+	position: relative;
+	line-height: 60px;
+	outline:none;
+    -webkit-transition:  color 0.2s ease-in-out;
+	-moz-transition:  color 0.2s ease-in-out;
+	-o-transition:  color 0.2s ease-in-out;
+	-ms-transition:  color 0.2s ease-in-out;
+	transition:  color 0.2s ease-in-out;
+	font-family: "宋体";
+	text-decoration: none;
+}
+.st-accordion ul li > a span{
+	background: transparent url(../images/down.png) no-repeat center center;
+	text-indent:-9000px;
+	width: 26px;
+	height: 14px;
+	position: absolute;
+	top: 50%;
+	right: -26px;
+	margin-top: -7px;
+	opacity:0;
+	-webkit-transition:  all 0.2s ease-in-out;
+	-moz-transition:  all 0.2s ease-in-out;
+	-o-transition:  all 0.2s ease-in-out;
+	-ms-transition:  all 0.2s ease-in-out;
+	transition:  all 0.2s ease-in-out;
+}
+.st-accordion ul li > a:hover{
+    color: #6c3e23;
+}
+.st-accordion ul li > a:hover span{
+	opacity:1;
+	right: 10px;
+}
+.st-accordion ul li.st-open > a{
+	color: #6c3e23;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+
+.st-accordion ul li.st-open {
+	background-color: #ffffff;
+}
+
+.st-accordion ul li.st-open > a span{
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+    transform:rotate(180deg);
+	right:10px;
+	opacity:1;
+}
+.st-content {
+	font-size: 12px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+.st-content .txt p {
+	text-indent: 24px;
+	line-height: 20px;
+}
+/*.st-content{
+    padding: 5px 0px 30px 0px;
+}
+.st-content p{
+    font-size:  16px;
+    line-height:  28px;
+    padding: 0px 4px 15px 4px; 
+}
+.st-content img{
+    width:125px;
+    border-right:1px solid #fff;
+    border-bottom:1px solid #fff;
+}*/
+@media screen and (max-width: 320px){
+	.st-accordion ul li > a{
+		font-size:36px;
+	}
+}

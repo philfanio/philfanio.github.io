@@ -1,0 +1,36 @@
+.line2_c {
+	background-color: #F6F4F4;
+}
+
+.clientTD_c {
+	height: 100%;
+	padding: 1px 0px 0px 0px;
+}
+
+.main-table_c {
+	background-color: #C3C3C3;
+	margin: 10px 0px 5px 0px;
+}
+
+.line-head_c {
+	background-color: #C3C3C3;
+}
+.line-head_c td {font-size:12px;font-weight:bold;color:#3773B9;}
+
+.w1_c {
+	height: 26;
+}
+
+div.selectDiv_c {
+	font-family: verdana;
+	font-size: 10pt;
+	border: darkgray 1px solid;
+	overflow: auto;
+	SCROLLBAR-FACE-COLOR: #f6f6f6;
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	SCROLLBAR-SHADOW-COLOR: #cccccc;
+	SCROLLBAR-3DLIGHT-COLOR: #cccccc;
+	SCROLLBAR-ARROW-COLOR: #330000;
+	SCROLLBAR-TRACK-COLOR: #f6f6f6;
+	SCROLLBAR-DARKSHADOW-COLOR: #ffffff;
+}

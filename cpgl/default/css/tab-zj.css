@@ -1,0 +1,80 @@
+#tabs-wrapper {
+	margin-top: 20px;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #CCCCCC;
+}
+#tabs-wrapper .ui-widget-content {
+	color: #3e3a39;
+}
+#tabs-wrapper .ui-widget-content p {
+	color: #3e3a39;
+	line-height: 20px;
+	text-indent: 24px;
+	font-size: 12px;
+}
+
+#tabs-wrapper .ui-widget-header {
+	background-image: none;
+	background-color: #e6e6e6;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-weight: normal;
+}
+
+#tabs-wrapper .ui-corner-all {
+    border-radius: 0px;
+}
+
+#tabs-wrapper .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 0px;
+}
+#tabs-wrapper .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 0px;
+}
+
+
+#tabs-wrapper .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color: #3e3a39;
+    text-decoration: none;
+}
+
+#tabs-wrapper .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+	color: #6c3e23;
+	text-decoration: none;
+	font-weight: bold;
+	background: #fff;
+	font-size: 14px;
+}
+
+
+#tabs-wrapper .ui-tabs {
+    padding: 0em;
+}
+
+#tabs-wrapper .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	background: transparent;
+	font-weight: normal;
+}
+
+#tabs-wrapper .ui-tabs .ui-tabs-nav{
+	padding: 0;
+}
+
+#tabs-wrapper .ui-tabs .ui-tabs-nav li{
+	border: 0;
+	margin-top: 0;
+}
+
+#tabs-wrapper .ui-tabs .ui-tabs-nav li a{
+	width:100px;
+	text-align: center;
+}
+

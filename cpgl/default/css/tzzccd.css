@@ -1,0 +1,82 @@
+/* 台账左侧菜单 */
+.l-menu-t {
+	width:225px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	font-weight: bold;
+	color: #6c3e23;
+	text-align: right;
+	height: 50px;
+	line-height: 50px;
+	padding-right: 15px;
+}
+.l-menu {
+	width:240px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #6c3e23;
+	padding-bottom: 20px;
+	float: left;
+	position:absolute;
+}
+.l-menu span {
+	padding-right: 20px;
+	position:absolute;
+	right: 0px;
+}
+.l-menu span .z1 {
+	font-size: 12px;
+}
+
+
+.l-menu ul {margin:0;}
+.l-menu ul li {
+	width:240px;
+	height:29px;
+	padding-bottom:8px;
+	overflow:hidden;
+	position:relative;
+	float:left;
+	display:inline;
+}
+
+.l-menu ul li a {
+	display:block;
+	width:240px;
+	height:29px;
+	line-height:26px;
+	font-family:"微软雅黑";
+	font-size:16px;
+	text-indent:20px;
+	overflow:hidden;
+	position:relative;
+	z-index:100000;
+	text-decoration: none;
+	font-weight: bold;
+}
+.l-menu ul li p {
+	position:absolute;
+	z-index:100;
+	top:0;
+	left:-240px;
+	width:240px;
+	height:29px;
+	background-color: #6c3e23;
+}
+.l-menu ul li b {
+	position:absolute;
+	z-index:100;
+	top:0;
+	right:0;
+	display:block;
+	width:150px;
+	height:29px;
+	background-color: #b8b7b7;
+}
+.l-menu ul li.current p {left:0;}
+.l-menu ul li.current a {
+	color:#fff;
+	background-image: url(../images/tzjt.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}

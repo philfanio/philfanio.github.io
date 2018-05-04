@@ -1,0 +1,120 @@
+/* 台账右 */
+.kjfs {
+	width: 100%;
+	background-color: #efefef;
+	float: left;
+	padding-bottom: 10px;
+}
+.kjfs .t {
+	width: 100%;
+	line-height: 40px;
+	height: 40px;
+}
+.kjfs .t .l {
+	float: left;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	line-height: 40px;
+	color: #6c3e23;
+	height: 40px;
+	padding-left: 15px;
+	font-weight: bold;
+}
+.kjfs .t .r {
+	float: right;
+	padding-right: 10px;
+}
+.kjfs .img {
+	width: 240px;
+	float: left;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.kjfs .img ul li {
+	float: left;
+	width: 80px;
+	text-align: center;
+	height: 65px;
+	cursor:pointer;
+}
+.kjfs .img ul li .p1 {
+	width: 80px;
+	height: 35px;
+}
+.kjfs .img ul li .p2 {
+	width: 80px;
+	height: 22px;
+	line-height: 22px;
+	font-family: "宋体";
+	font-size: 12px;
+}
+
+
+
+
+.news {
+	width: 100%;
+	float: left;
+}
+.news .list {
+	width: 100%;
+	float: left;
+}
+.news .list li {
+	width: 100%;
+	float: left;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #FFFFFF;
+	border-bottom-color: #cccccc;
+	line-height: 40px;
+	height: 40px;
+	background-image: url(../images/newli.jpg);
+	background-repeat: no-repeat;
+	background-position: 12px center;
+	text-indent: 45px;
+	font-size: 12px;
+	font-family: "宋体";
+}
+.news .list .rq {
+	width: 100%;
+	float: left;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #FFFFFF;
+	border-bottom-color: #cccccc;
+	line-height: 40px;
+	height: 40px;
+	background-image: url(../images/rq.jpg);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	text-indent: 45px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+
+.news .t {
+	width: 100%;
+	line-height: 40px;
+	height: 40px;
+}
+.news .t .l {
+	float: left;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	line-height: 40px;
+	color: #6c3e23;
+	height: 40px;
+	padding-left: 15px;
+	font-weight: bold;
+}
+.news .t .r {
+	float: right;
+	font-size: 12px;
+	padding-right: 10px;
+}

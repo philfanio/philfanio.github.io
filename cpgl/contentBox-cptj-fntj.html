@@ -1,0 +1,192 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+<!--全局样式-->
+<link href="common/css/ces.coral.css" rel="stylesheet" type="text/css" />
+<link href="default/css/layout.css" rel="stylesheet" type="text/css" />
+<script src="common/js/ces.coral.js" type="text/javascript"></script>
+<!--<script src="default/js/jquery-1.9.1.js" type="text/javascript"></script>-->
+
+
+<!--滚动条-->
+<link href="default/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+<script src="default/js/perfect-scrollbar.with-mousewheel.min.js" type="text/javascript"></script>
+<script src="default/js/autoFit.js" type="text/javascript"></script>
+
+<!--表格隔行换色-->
+<link href="default/css/ghhs.css" rel="stylesheet" type="text/css">	
+<script src="default/js/ghhs.js" type="text/javascript"></script>
+
+<!--框架-->
+<script type="text/javascript">
+	$(function(){
+		var initPage = function(){
+			var timeout, resizePage = function(){
+				var containerH = $(window).height();
+				
+				if (document.getElementById("contentright")) {
+					$("#contentleft").width($(window).width()-$("#contentright").width()).height(containerH);
+				} else {
+					$("#contentleft").width($(window).width()).height(containerH);
+				}
+				
+				$("#contentright").height(containerH);
+			}
+			resizePage();
+			$(window).resize(function(){
+				resizePage();
+			});
+		}
+		initPage();
+		
+	})
+</script>
+
+</head>
+
+<body class="contentBox-body">
+
+		<div id="contentleft" class="contentleft-body">
+		
+			<div class="dx">
+				<span class="lj">藏品检索 > 分类统计</span>
+			</div>
+
+
+			
+			<div class="submenu-cx jgfn-bj">
+			
+<table width="100%" border="0" cellspacing="5" cellpadding="0" class="fdj-bj">
+        <tr>
+          <td>&nbsp;</td>
+          <td class="font01"><input name="checkbox" type="checkbox" value="checkbox" checked>
+          列</td>
+          <td width="100"><select class="inupt_07" name="select13">
+            <option>藏品类别</option>
+          </select></td>
+          <td  class="font01">
+            <input name="checkbox2" type="checkbox" value="checkbox" checked>
+行</td>
+          <td width="100"><select class="inupt_07" name="select5">
+            <option>藏品级别</option>
+          </select></td>
+          <td width="200">
+<div class="btn">
+	<ul>
+		<li><a class="btn-tongji" href="#">统计</a></li>
+		<li><a class="btn-dc" href="#">导出</a></li>
+	</ul>
+</div>		  </td>
+          <td width="100">
+<div class="btn">
+	<ul>
+		<li><a class="btn-tongji" href="cptj-tb.html">图表显示</a></li>
+	</ul>
+</div>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+</table>
+
+
+			</div>
+			
+
+
+<div class='gdt' perfectbar='1' subWidth="#contentright" subHeight=".submenu-cx,.dx">
+<div class="padding10">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" name="table" id="table">
+  <thead>
+    <tr>
+      <th>藏品类别</th>
+      <th>一级</th>
+      <th>二级</th>
+      <th>三级</th>
+      <th>合计</th>
+    </tr>
+  </thead>
+    <tbody><tr class="color2" style="background-color: rgb(247, 242, 239);">
+      <td align="center">陶瓷</td>
+      <td align="center">100</td>
+      <td align="center">22</td>
+      <td align="center">78</td>
+      <td align="center">452</td>
+      </tr>
+    <tr class="color1" style="background-color: rgb(255, 255, 255);">
+      <td align="center">玉石器</td>
+      <td align="center">150</td>
+      <td align="center">51</td>
+      <td align="center">34</td>
+      <td align="center">455</td>
+      </tr>
+    <tr class="color2" style="background-color: rgb(247, 242, 239);">
+      <td align="center">铭刻</td>
+      <td align="center">222</td>
+      <td align="center">261</td>
+      <td align="center">54</td>
+      <td align="center">424</td>
+      </tr>
+    <tr class="color1" style="background-color: rgb(255, 255, 255);">
+      <td align="center">青铜器</td>
+      <td align="center">250</td>
+      <td align="center">47</td>
+      <td align="center">14</td>
+      <td align="center">453</td>
+      </tr>
+    <tr class="color2" style="background-color: rgb(247, 242, 239);">
+      <td align="center">玺印</td>
+      <td align="center">260</td>
+      <td align="center">213</td>
+      <td align="center">77</td>
+      <td align="center">457</td>
+      </tr>
+    <tr class="color1" style="background-color: rgb(255, 255, 255);">
+      <td align="center">漆器</td>
+      <td align="center">150</td>
+      <td align="center">17</td>
+      <td align="center">17</td>
+      <td align="center">45</td>
+      </tr>
+    <tr class="color2">
+      <td align="center">雕塑</td>
+      <td align="center">190</td>
+      <td align="center">54</td>
+      <td align="center">783</td>
+      <td align="center">456</td>
+      </tr>
+    <tr class="color1">
+      <td align="center">绘画</td>
+      <td align="center">260</td>
+      <td align="center">78</td>
+      <td align="center">75</td>
+      <td align="center">455</td>
+      </tr>
+    <tr class="color1">
+      <td align="center" bgcolor="#b8b7b7"><strong>合计</strong></td>
+      <td align="center" bgcolor="#b8b7b7"><strong>4000</strong></td>
+      <td align="center" bgcolor="#b8b7b7">4587</td>
+      <td align="center" bgcolor="#b8b7b7">447</td>
+      <td align="center" bgcolor="#b8b7b7">45645</td>
+      </tr>
+</tbody>
+</table> 
+
+
+
+</div>
+</div>
+
+
+		</div>
+		
+		
+		
+		
+
+</body>
+</html>

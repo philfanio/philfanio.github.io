@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+<!--全局样式-->
+<link href="common/css/ces.coral.css" rel="stylesheet" type="text/css" />
+<link href="default/css/layout.css" rel="stylesheet" type="text/css" />
+<script src="common/js/ces.coral.js" type="text/javascript"></script>
+<!--<script src="default/js/jquery-1.9.1.js" type="text/javascript"></script>-->
+
+</head>
+
+<body class="contentrightt-body">
+
+	<div class="mx">
+			<div class="bt-2"><img src="default/images/ls/cp10.jpg"></div>
+			<div class="bt">专题名称专题名称专</div>
+			<div class="bt-1">创建时间：2013年05月22日</div>
+			<div class="bt-1">创建人：KEVIN</div>
+
+			<div class="txt">
+			<h5>【专题简介】</h5>
+			<div id="jz" class="p1">近日召开的2008上海市软件行业协会年会上传出信息，由上海金鑫计算机系统工程股份有限公司开发的“光典档案信息资源管理软件”被评为2008年度上海市优秀软件产品。近日召开的2008上海市软件行业协会年会上传出信息，由上海金鑫计算机系统工程股份有限公司开发的“光典档案信息资源管理软件”被评为2008年度上海市优秀软件产品。</div>
+			</div>
+	
+				<div class="btn">
+					<ul>
+						<li><a name="btn-cpzt-bj" class="btn-bj" id="btn-cpzt-bj">编辑</a></li>
+					</ul>
+				</div>
+				
+<!--				<div class="btn">
+					<ul>
+						<li><a id="tc-img" class="btn-llzt">媒体赏析</a></li>
+					</ul>
+				</div>-->
+			
+			
+</div>
+		
+<!--截字-->
+<script>
+(function(){
+  var o = document.getElementById("jz");
+  var s = o.innerHTML;
+  var p = document.createElement("span");
+  var n = document.createElement("a");
+  p.innerHTML = s.substring(0,100);
+  n.innerHTML = s.length > 100 ? "..." : "";
+  n.href = "###";
+  n.onclick = function(){
+    if (n.innerHTML == "..."){
+      n.innerHTML = "收起";
+      p.innerHTML = s;
+    }else{
+      n.innerHTML = "...";
+      p.innerHTML = s.substring(0,100);
+    }
+  }
+  o.innerHTML = "";
+  o.appendChild(p);
+  o.appendChild(n);
+	
+})();
+</script>
+<!--截字-->
+
+
+<script type="text/javascript">
+	$("#tc-img").click(function(){
+		top.dialog("#tcimg");
+	});
+</script>
+
+
+<script>
+(function(){
+
+	$("#btn-cpzt-bj").click(function(){
+		$("#contentBox",top.document.body).attr("src","./cpzt-xz-bj.html");
+	});
+	
+})();
+</script>
+
+</body>
+</html>

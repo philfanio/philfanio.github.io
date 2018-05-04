@@ -1,0 +1,209 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>编目导入</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+<!--全局样式-->
+<link href="common/css/ces.coral.css" rel="stylesheet" type="text/css" />
+<link href="default/css/layout.css" rel="stylesheet" type="text/css" />
+<script src="common/js/ces.coral.js" type="text/javascript"></script>
+<!--<script src="default/js/jquery-1.9.1.js" type="text/javascript"></script>-->
+
+<!--下拉框-->
+<link href="default/css/xlk.css" rel="stylesheet" type="text/css">
+<script src="default/js/xlk.js" type="text/javascript"></script>
+
+<!--滚动条-->
+<link href="default/css/perfect-scrollbar.css" rel="stylesheet" type="text/css">	
+<script src="default/js/perfect-scrollbar.with-mousewheel.min.js" type="text/javascript"></script>
+<script src="default/js/autoFit.js" type="text/javascript"></script>
+
+
+<!--表格隔行换色-->
+<link href="default/css/ghhs.css" rel="stylesheet" type="text/css">	
+<script src="default/js/ghhs.js" type="text/javascript"></script>
+
+<!--添加附件按钮rhl-->
+<link href="default/css/rhl_tz.css" rel="stylesheet" type="text/css">	
+</head>
+
+<body class="contentleft-body">
+
+
+			<div class="dx">
+				<span class="lj"><a href="#">数据维护</a> &gt;<a href="#">编目导入</a></span>
+			</div>
+			
+			<div class="submenu">
+			<div class="btn">
+				<ul>
+					<li><a href="#" class="btn-qx" onclick="f_selectAll();" >全选</a></li>
+					<li><a href="bmdr-xj.html" class="btn-xj" >新建任务</a></li>
+					<li><a href="bmdr-pz.html" class="btn-xj" >配置</a></li>
+					<!-- <li><a href="#" class="btn-xj" onclick="f_add();">导入</a></li> -->
+					<li><a href="#" class="btn-sc" >删除</a></li>
+				</ul>
+			</div>
+			<form id="queryForm" method="post" action="">
+				<div class="xlk">
+					<div class="key">
+						<span class="mkey">选择类型</span>
+						<ul style="display: none;" class="keyul">
+							<li onclick="sousuo('data_source');">数据来源</li>
+							<li onclick="sousuo('batch_no');">批量编号</li>
+						</ul>
+					</div>
+					<input class="seatext" value="请输入关键字" type="text">
+					<input class="seabtn" value="搜索" type="submit" style="float: inherit;">
+				</div>
+			</form>
+            
+            
+            </div>
+		<div class='gdt' perfectbar='1' subWidth="" subHeight=".submenu,.dx">
+			<div class="padding10">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0" id="table" name="table">
+  <thead>
+    <tr>
+      <th width="50">&nbsp;</th>
+      <th>批量编号</th>
+      <th>数据来源</th>
+      <th>接收人</th>
+      <th>接收日期</th>
+      <th>数据文件</th>
+      <th>成功条目数</th>
+      <th>失败条目数</th>
+      <th>状态</th>
+      <th width="200">操作</th>
+    </tr>
+  </thead>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">1401095936328882</td>
+      <td align="center">旧系统数据</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">201406091530.xls</td>
+      <td align="center">8</td>
+      <td align="center">0</td>
+      <td align="center">导入成功</td>
+      <td align="center"><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+      <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">1401095936328882</td>
+      <td align="center">旧系统数据</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">201406091530.xls</td>
+      <td align="center">8</td>
+      <td align="center">0</td>
+      <td align="center">导入成功</td>
+      <td align="center"><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+      <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">1401095936328882</td>
+      <td align="center">旧系统数据</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">201406091530.xls</td>
+      <td align="center">8</td>
+      <td align="center">0</td>
+      <td align="center">导入成功</td>
+      <td align="center"><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+      <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">1401095936328882</td>
+      <td align="center">旧系统数据</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">201406091530.xls</td>
+      <td align="center">8</td>
+      <td align="center">0</td>
+      <td align="center">导入成功</td>
+      <td align="center"><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+      <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">1401095936328882</td>
+      <td align="center">旧系统数据</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">201406091530.xls</td>
+      <td align="center">8</td>
+      <td align="center">0</td>
+      <td align="center">导入成功</td>
+      <td align="center"><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+      <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">1401095936328882</td>
+      <td align="center">旧系统数据</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">201406091530.xls</td>
+      <td align="center">8</td>
+      <td align="center">0</td>
+      <td align="center">导入成功</td>
+      <td align="center"><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+      <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">1401095936328882</td>
+      <td align="center">旧系统数据</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">201406091530.xls</td>
+      <td align="center">8</td>
+      <td align="center">0</td>
+      <td align="center">导入成功</td>
+      <td align="center"><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+      <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">1401095936328882</td>
+      <td align="center">旧系统数据</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">201406091530.xls</td>
+      <td align="center">8</td>
+      <td align="center">0</td>
+      <td align="center">导入成功</td>
+      <td align="center"><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+      <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">1401095936328882</td>
+      <td align="center">旧系统数据</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">201406091530.xls</td>
+      <td align="center">8</td>
+      <td align="center">0</td>
+      <td align="center">导入成功</td>
+      <td align="center"><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+      <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+      <td align="center">1401095936328882</td>
+      <td align="center">旧系统数据</td>
+      <td align="center">金鑫股份</td>
+      <td align="center">2014-6-9</td>
+      <td align="center">201406091530.xls</td>
+      <td align="center">8</td>
+      <td align="center">0</td>
+      <td align="center">导入成功</td>
+      <td align="center"><a href="#" style="margin-left:10px;" >查看日志</a></td>
+    </tr>
+    
+</table>
+				<div id="pagersr"></div>
+			</div>
+		</div>
+
+
+</body>
+</html>

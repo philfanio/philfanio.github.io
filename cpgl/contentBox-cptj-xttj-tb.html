@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+<!--全局样式-->
+<link href="common/css/ces.coral.css" rel="stylesheet" type="text/css" />
+<link href="default/css/layout.css" rel="stylesheet" type="text/css" />
+<script src="common/js/ces.coral.js" type="text/javascript"></script>
+<!--<script src="default/js/jquery-1.9.1.js" type="text/javascript"></script>-->
+
+
+<!--滚动条-->
+<link href="default/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+<script src="default/js/perfect-scrollbar.with-mousewheel.min.js" type="text/javascript"></script>
+<script src="default/js/autoFit.js" type="text/javascript"></script>
+
+<!--表格隔行换色-->
+<link href="default/css/ghhs.css" rel="stylesheet" type="text/css">	
+<script src="default/js/ghhs.js" type="text/javascript"></script>
+
+<!--框架-->
+<script type="text/javascript">
+	$(function(){
+		var initPage = function(){
+			var timeout, resizePage = function(){
+				var containerH = $(window).height();
+				
+				if (document.getElementById("contentright")) {
+					$("#contentleft").width($(window).width()-$("#contentright").width()).height(containerH);
+				} else {
+					$("#contentleft").width($(window).width()).height(containerH);
+				}
+				
+				$("#contentright").height(containerH);
+			}
+			resizePage();
+			$(window).resize(function(){
+				resizePage();
+			});
+		}
+		initPage();
+		
+	})
+</script>
+
+</head>
+
+<body class="contentBox-body">
+
+		<div id="contentleft" class="contentleft-body">
+		
+			<div class="dx">
+				<span class="lj">藏品检索 > 系统统计</span>
+			</div>
+
+
+			
+			<div class="submenu-cx jgfn-bj">
+			
+<table width="100%" border="0" cellspacing="5" cellpadding="0" class="fdj-bj">
+        <tr>
+          <td>&nbsp;</td>
+          <td class="font01">开始年度</td>
+          <td width="150"><input name="textfield6" type="text" value="日期输入框"></td>
+          <td  class="font01">
+ 结束年度</td>
+          <td width="150"><input name="textfield6" type="text" value="日期输入框"></td>
+          <td width="200">
+<div class="btn">
+	<ul>
+		<li><a class="btn-tongji" href="#">统计</a></li>
+		<li><a class="btn-dc" href="#">导出</a></li>
+	</ul>
+</div>		  </td>
+
+          <td width="100">
+<div class="btn">
+	<ul>
+		<li><a class="btn-tongji" href="contentBox-cptj-xttj.html">列表显示</a></li>
+	</ul>
+</div>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+</table>
+
+
+			</div>
+			
+
+
+<div class='gdt' perfectbar='1' subWidth="#contentright" subHeight=".submenu-cx,.dx">
+<div class="padding10">
+
+<div class="tubt-nr"><img src="default/images/ls/tb3.jpg"></div>
+
+
+</div>
+</div>
+
+
+		</div>
+		
+		
+		
+		
+
+</body>
+</html>
